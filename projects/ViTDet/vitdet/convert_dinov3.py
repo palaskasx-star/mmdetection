@@ -3,7 +3,7 @@ import argparse
 
 def convert_dinov3_to_mmdet(timm_ckpt_path, out_path):
     print(f"Loading timm DINOv3 checkpoint from: {timm_ckpt_path}")
-    timm_state = torch.load(timm_ckpt_path, map_location='cpu')
+    timm_state = torch.load(timm_ckpt_path, map_location='cpu', weights_only=False)
     
     # Extract actual weights depending on how the checkpoint was saved
     if 'model_ema' in timm_state:
