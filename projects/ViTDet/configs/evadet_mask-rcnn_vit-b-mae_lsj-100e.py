@@ -43,7 +43,7 @@ model = dict(
         
         init_cfg=dict(
             type='Pretrained', 
-            checkpoint='/home/cpalaskas/diploma_project/mmdetection/projects/ViTDet/vitdet/small_dinov3_temp.pth'
+            checkpoint='/home/jupyter/palaskasc/mmdetection/projects/ViTDet/vitdet/small_dinov3_temp.pth'
         )),
     neck=dict(
         _delete_=True,
