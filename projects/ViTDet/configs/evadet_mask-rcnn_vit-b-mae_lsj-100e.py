@@ -33,7 +33,7 @@ model = dict(
         drop_path_rate=0.1,
         window_size=14,
         mlp_ratio=4,
-        qkv_bias=True, 
+        qkv_bias=False, 
         norm_cfg=backbone_norm_cfg,
         window_block_indexes=[0, 1, 3, 4, 6, 7, 9, 10],
         
